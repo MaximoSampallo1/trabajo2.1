@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
-    <link rel="stylesheet" href="/estilos/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/styles.css">
 </head>
 <body>
 
@@ -35,14 +36,38 @@
             </div>
           </nav>
     </section>
+    <header>
+      <section>
+        <h1>MotorsportsLp</h1>
+        <p></p>
+    </section>
+    </header>
     <main>
-        <section>
-            <h1>Contáctanos</h1>
-            <p>Ponte en contacto con nosotros a través de este formulario.</p>
-        </section>
+      <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-6">Contáctanos</h3>
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-lg">Nombre</label>
+                    <input type="text" id="name" name="name" class="w-full text-white rounded-lg py-2 px-4">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="w-full text-white rounded-lg py-2 px-4">
+                </div>
+                <div>
+                    <label for="message" class="block text-lg">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" class="w-full text-white rounded-lg py-2 px-4"></textarea>
+                </div>
+                <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-lg text-lg hover:bg-red-700">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
     </main>
-    <footer>
-        <p>Maximo Sampallo</p>
-    </footer>
+    <footer class=" py-4 text-center">
+      <p>&copy; 2025 MotorsportsLP. </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
 </body>
 </html>
